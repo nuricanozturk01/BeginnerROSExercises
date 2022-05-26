@@ -1,0 +1,13 @@
+<launch>
+
+	<node pkg="stage_ros" name="stageros" type="stageros" args="$(find beginner_tutorials)/world/worldfile.world" output="screen"/>
+		
+	<arg name="id"/>
+
+	<node pkg="beginner_tutorials" name="rotate1"  args="$(arg id)" type="rotate2.py"/>
+	<node pkg="beginner_tutorials" name="rotate2"  args="1" type="rotate2.py"/>
+	
+	
+
+
+</launch>

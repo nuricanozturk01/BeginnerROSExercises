@@ -1,0 +1,14 @@
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_localhost__43311: http://localhost:43311/
+rosversion: '1.15.14
+
+  '
+run_id: c78dbfe0-b95d-11ec-abd7-cf0cabeae79d
+turtlesim:
+  background_b: 255
+  background_g: 23
+  background_r: 143

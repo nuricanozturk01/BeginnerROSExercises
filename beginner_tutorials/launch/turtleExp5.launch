@@ -1,0 +1,15 @@
+<launch>
+
+	<node pkg="turtlesim" name="turtle1" type="turtlesim_node"/>
+	<node pkg="rosservice" type="rosservice" name="turtle2" args="call /spawn 2 2 0.2 turtle2"/>
+		
+	<arg name="id"/>
+	<arg name="nodeId"/>
+	
+	<node pkg="beginner_tutorials" name="moveToGo"  args="$(arg id) $(arg nodeId)" type="moveToGo.py"/>
+	<node pkg="beginner_tutorials" name="moveToGo2" args="$(arg id) 2" type="moveToGo.py"/>
+	
+	
+
+
+</launch>

@@ -1,0 +1,20 @@
+<launch>
+
+
+	<param name="r" value="255" />
+	<param name="g" value="25" />
+	<param name="b" value="20" />
+	
+<!--
+	<rosparam file="$(find beginner_tutorials)/config/params.yaml" command="load"/>
+-->
+	<node pkg="turtlesim" name="turtle1" type="turtlesim_node"/>
+	
+<!--		
+	<node pkg="beginner_tutorials" name="color" type="changeColor.py" output="screen"/>
+-->	
+	<node pkg="beginner_tutorials" name="color" type="changeColor" output="screen"/>
+	
+
+
+</launch>

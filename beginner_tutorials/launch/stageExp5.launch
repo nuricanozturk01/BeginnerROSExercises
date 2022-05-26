@@ -1,0 +1,7 @@
+<launch>
+
+	<node pkg="stage_ros" name="stageros" type="stageros" args="$(find beginner_tutorials)/world/worldfile.world" output="screen"/>
+		
+
+
+</launch>

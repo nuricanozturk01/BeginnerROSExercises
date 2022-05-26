@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="stage_ros" name="stageros" type="stageros" args="$(find beginner_tutorials)/world/worldfile.world" output="screen"/>
+	<arg name="r1" default="$(find beginner_tutorials)/config/goals1.yaml"/> 
+	<arg name="r2" default="$(find beginner_tutorials)/config/goals2.yaml"/> 
+	<node pkg="beginner_tutorials" name="rotate1"  args="$(arg r1)" type="projecttask2.py"/>
+	<!-- <node pkg="beginner_tutorials" name="rotate2"  args="$(arg r2)" type="projecttask2.py"/> -->
+</launch>
